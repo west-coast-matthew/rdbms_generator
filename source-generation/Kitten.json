@@ -1,0 +1,29 @@
+{
+  "entityName" : "Kitten",
+  "tableName" : "kitten",
+  "childCollections" : [ {
+    "reference" : null,
+    "cascadeDelete" : true,
+    "parentEntityName" : "Customer",
+    "childEntityName" : "Kitten",
+    "parentIdColumn" : "id",
+    "childFkColumn" : "customer_id",
+    "relationType" : "MANY_TO_ONE"
+  } ],
+  "parent" : null,
+  "attributes" : [ {
+    "name" : "id",
+    "columnName" : "id",
+    "dataType" : "COLUMN_TYPE_INTEGER",
+    "defaultValue" : null,
+    "stereoType" : "PK",
+    "isRequired" : false
+  }, {
+    "name" : "customerId",
+    "columnName" : "customer_id",
+    "dataType" : "COLUMN_TYPE_INTEGER",
+    "defaultValue" : null,
+    "stereoType" : "DEFAULT",
+    "isRequired" : false
+  } ]
+}

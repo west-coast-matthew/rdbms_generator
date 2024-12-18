@@ -1,0 +1,42 @@
+{
+  "entityName" : "Address",
+  "tableName" : "address",
+  "childCollections" : [ ],
+  "parent" : null,
+  "attributes" : [ {
+    "name" : "id",
+    "columnName" : "id",
+    "dataType" : "COLUMN_TYPE_INTEGER",
+    "defaultValue" : null,
+    "stereoType" : "PK",
+    "isRequired" : false
+  }, {
+    "name" : "street",
+    "columnName" : "street",
+    "dataType" : "COLUMN_TYPE_STRING",
+    "defaultValue" : null,
+    "stereoType" : "DEFAULT",
+    "isRequired" : false
+  }, {
+    "name" : "city",
+    "columnName" : "city",
+    "dataType" : "COLUMN_TYPE_STRING",
+    "defaultValue" : null,
+    "stereoType" : "DEFAULT",
+    "isRequired" : false
+  }, {
+    "name" : "state",
+    "columnName" : "state",
+    "dataType" : "COLUMN_TYPE_STRING",
+    "defaultValue" : null,
+    "stereoType" : "DEFAULT",
+    "isRequired" : false
+  }, {
+    "name" : "postalCode",
+    "columnName" : "postal_code",
+    "dataType" : "COLUMN_TYPE_STRING",
+    "defaultValue" : null,
+    "stereoType" : "DEFAULT",
+    "isRequired" : false
+  } ]
+}

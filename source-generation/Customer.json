@@ -1,0 +1,57 @@
+{
+  "entityName" : "Customer",
+  "tableName" : "customer",
+  "childCollections" : [ {
+    "reference" : null,
+    "cascadeDelete" : true,
+    "parentEntityName" : "Customer",
+    "childEntityName" : "Kitten",
+    "parentIdColumn" : "id",
+    "childFkColumn" : "customer_id",
+    "relationType" : "MANY_TO_ONE"
+  } ],
+  "parent" : null,
+  "attributes" : [ {
+    "name" : "id",
+    "columnName" : "id",
+    "dataType" : "COLUMN_TYPE_INTEGER",
+    "defaultValue" : null,
+    "stereoType" : "PK",
+    "isRequired" : false
+  }, {
+    "name" : "firstName",
+    "columnName" : "first_name",
+    "dataType" : "COLUMN_TYPE_STRING",
+    "defaultValue" : null,
+    "stereoType" : "DEFAULT",
+    "isRequired" : false
+  }, {
+    "name" : "lastName",
+    "columnName" : "last_name",
+    "dataType" : "COLUMN_TYPE_STRING",
+    "defaultValue" : null,
+    "stereoType" : "DEFAULT",
+    "isRequired" : false
+  }, {
+    "name" : "email",
+    "columnName" : "email",
+    "dataType" : "COLUMN_TYPE_STRING",
+    "defaultValue" : null,
+    "stereoType" : "DEFAULT",
+    "isRequired" : false
+  }, {
+    "name" : "age",
+    "columnName" : "age",
+    "dataType" : "COLUMN_TYPE_INTEGER",
+    "defaultValue" : null,
+    "stereoType" : "DEFAULT",
+    "isRequired" : false
+  }, {
+    "name" : "createdAt",
+    "columnName" : "created_at",
+    "dataType" : "COLUMN_TYPE_DATE",
+    "defaultValue" : null,
+    "stereoType" : "CREATE_TIMESTAMP",
+    "isRequired" : false
+  } ]
+}
