@@ -16,7 +16,11 @@ The concept of code generation is an often overlooked approach to code developme
 
 The actors involved in this effort fall into the following 3 categories: consumers, gnerators, and publishers. Each role is represented by an interface, and contained within their own retrospective package. Concrete implementations may be plugged into the routine (basically we are following the factory pattern). 
 
-Consumers are responsible reverse engineering existing artifacts from a source. In this case, we will be using schema information from an RDBS system.
+*Consumers* are responsible reverse engineering existing artifacts from a source. In this case, we will be using schema information from an RDBS system.
+
+The *generator* role is responsible for producing the DSL. 
+
+And finally the *publisher* role persists the DSL file(s) into the appropriate destination, in our case the local file system.
 
 ## Starting the project
 
