@@ -11,6 +11,13 @@ This project provides an example of how we can reverse engineer a relational dat
 
 The concept of code generation is an often overlooked approach to code development. Hoprefully this project will spark some interest in this area, enjoy!
 
+## Class model
+![Alt text](images/dsl-generator-class-model.png)
+
+The actors involved in this effort fall into the following 3 categories: consumers, gnerators, and publishers. Each role is represented by an interface, and contained within their own retrospective package. Concrete implementations may be plugged into the routine (basically we are following the factory pattern). 
+
+Consumers are responsible reverse engineering existing artifacts from a source. In this case, we will be using schema information from an RDBS system.
+
 ## Starting the project
 
 1. Locate the schema file under the ./sql directory. Create a new database and execute it to create the schema.
